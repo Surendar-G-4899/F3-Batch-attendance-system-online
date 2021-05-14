@@ -24,16 +24,16 @@ student_attendance={}
 
 #-----------------------Initial decleration and preperation----------------------
 
-surendar_image = face_recognition.load_image_file("./sp/images/surendar.jpg")
-surendar_face_encoding = face_recognition.face_encodings(surendar_image)[0]
+face1_image = face_recognition.load_image_file(".<Facimage1_path>.jpg")
+face1_face_encoding = face_recognition.face_encodings(face1_image)[0]
 
 # Load a second sample picture and learn how to recognize it.
-vasanth_image = face_recognition.load_image_file("./sp/images/vasanth.jpg")
-vasanth_face_encoding = face_recognition.face_encodings(vasanth_image)[0]
+face2_image = face_recognition.load_image_file("./sp/images/vasanth.jpg")
+face2_face_encoding = face_recognition.face_encodings(face2_image)[0]
 
 # Load a third sample picture and learn how to recognize it.
-vishnu_image = face_recognition.load_image_file("./sp/images/vishnu.jpg")
-vishnu_face_encoding = face_recognition.face_encodings(vishnu_image)[0]
+face3_image = face_recognition.load_image_file("./sp/images/vishnu.jpg")
+face3_face_encoding = face_recognition.face_encodings(face3_image)[0]
 
 # Load a second sample picture and learn how to recognize it.
 #mnivetha_image = face_recognition.load_image_file("./np/images/m_nivetha1.jpg")
@@ -41,16 +41,17 @@ vishnu_face_encoding = face_recognition.face_encodings(vishnu_image)[0]
 
 # Create arrays of known face encodings and their names
 known_face_encodings = [
-    surendar_face_encoding,
-    vasanth_face_encoding,
-    vishnu_face_encoding
-    #mnivetha_face_encoding
+    face1_face_encoding,
+    face2_face_encoding,
+    face3_face_encoding
+    
 ]
+## Enter Name of faces in order
 known_face_names = [
-    "Surendar",
-    "Vasanth",
-    "Vishnu"
-    #"M_Nivetha"
+    "face1name",
+    "face2name",
+    "face3name"
+    
 ]
 
 
