@@ -1,0 +1,35 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css" integrity="sha384-Vkoo8x4CGsO3+Hhxv8T/Q5PaXtkKtu6ug5TOeNV6gBiFeWPGFN9MuhOf23Q9Ifjh" crossorigin="anonymous">
+    <!-- other  tags-->
+    <meta charset='utf-8'>
+    <meta http-equiv='X-UA-Compatible' content='IE=edge'>
+    <title> &#127895; Admin Login portal</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+
+    <style>
+        
+    </style>
+
+  </head>
+
+  <body class="text-center">
+    <center>
+    <div class="wrapper" style="margin-top: 10%;">
+        <form class="form-signin" action="attendance" enctype="multipart/form-data" method="POST">       
+          <h2 class="form-signin-heading">Staff/Admin login portal</h2>
+          <input type="text" class="form-control col-sm-4" name="username" style="margin-top: 2%;" placeholder="User Name" required="" autofocus="" />
+          <input type="password" class="form-control col-sm-4" name="password" style="margin-top: 1%;" placeholder="Password" required=""/>      
+          <button class="btn btn-lg btn-primary btn-block col-sm-2 " style="margin-top: 1%;" type="submit">Login</button>   
+        </form>
+    </div>
+    {% with message = get_flashed_messages() %}
+            {% if message %}
+               <h3 style="color: red;">{{ message }}</h3>
+            {% endif %}
+    {% endwith %}
+    </center>
+  
+  </body>
+</html>
